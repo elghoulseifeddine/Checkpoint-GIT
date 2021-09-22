@@ -1,1 +1,108 @@
-kvbcyetuiio
+Windows PowerShell
+.ms/pscore6                                                      
+
+PS C:\Users\HP\Desktop\GMC\learn_git_again> git init            .ms/pscore6  
+n_git_again/.git/
+PS C:\Users\HP\Desktop\GMC\learn_git_again> git commit -m "adding third.txt"
+[master (root-commit) 89c7d39] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+PS C:\Users\HP\Desktop\GMC\learn_git_again> git log
+commit 89c7d39d995592442e5f9ec90689922c9c8e7d67 (HEAD -> master)Author: elghoulseifeddine <elghoulseifeddine@gmail.com>
+Date:   Wed Sep 22 11:07:24 2021 +0100
+
+    adding third.txt
+g fourth.txt"
+[master 698620e] adding fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\HP\Desktop\GMC\learn_git_again> git rm third.txt    
+rm 'third.txt'
+PS C:\Users\HP\Desktop\GMC\learn_git_again> git log
+commit 698620e67094f0b83841f1c6c8f620cc75139a50 (HEAD -> master)Author: elghoulseifeddine <elghoulseifeddine@gmail.com>
+Date:   Wed Sep 22 11:08:41 2021 +0100
+
+    adding fourth.txt
+
+commit 89c7d39d995592442e5f9ec90689922c9c8e7d67
+Author: elghoulseifeddine <elghoulseifeddine@gmail.com>
+Date:   Wed Sep 22 11:07:24 2021 +0100
+
+    adding third.txt
+PS C:\Users\HP\Desktop\GMC\learn_git_again> git commit -m "removing third.txt"
+[master 3a783f1] removing third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\HP\Desktop\GMC\learn_git_again> git log
+Author: elghoulseifeddine <elghoulseifeddine@gmail.com>
+    removing third.txt
+
+commit 698620e67094f0b83841f1c6c8f620cc75139a50
+Author: elghoulseifeddine <elghoulseifeddine@gmail.com>
+Date:   Wed Sep 22 11:08:41 2021 +0100
+
+    adding fourth.txt
+
+commit 89c7d39d995592442e5f9ec90689922c9c8e7d67
+Author: elghoulseifeddine <elghoulseifeddine@gmail.com>
+Date:   Wed Sep 22 11:07:24 2021 +0100
+
+    adding third.txt
+PS C:\Users\HP\Desktop\GMC\learn_git_again> git config --global 
+core.pager 'cat -'
+PS C:\Users\HP\Desktop\GMC\learn_git_again> git config --global 
+user.name "Elghoul Seifeddine"
+PS C:\Users\HP\Desktop\GMC\learn_git_again> git config --global 
+user.email elghoulseifeddine@gmail.com
+PS C:\Users\HP\Desktop\GMC\learn_git_again> git config --global 
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object    
+
+Action
+    --get                 get value: name [value-pattern]       
+    --get-all             get all values: key [value-pattern]   
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value        
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name     
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --path                value is a path (file or directory name)
+Other
+    -z, --null            terminate values with NUL byte        
+    --name-only           show variable names only
+    --includes            respect include directives on lookup  
+    --show-origin         show origin of config (file, standard 
+input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+PS C:\Users\HP\Desktop\GMC\learn_git_again> git remote add origin https://github.com/elghoulseifeddine/Checkpoint-GIT.git       
+PS C:\Users\HP\Desktop\GMC\learn_git_again> git add .
+PS C:\Users\HP\Desktop\GMC\learn_git_again> git commit -m "checkpoint git in github"
+[master 4da97fb] checkpoint git in github
+ 1 file changed, 1 insertion(+)
+PS C:\Users\HP\Desktop\GMC\learn_git_again> git push origin master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (10/10), 879 bytes | 439.00 KiB/s, done.  
+Total 10 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/elghoulseifeddine/Checkpoint-GIT.git
+ * [new branch]      master -> master
+PS C:\Users\HP\Desktop\GMC\learn_git_again> 
